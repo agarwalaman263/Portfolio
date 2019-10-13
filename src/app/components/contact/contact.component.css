@@ -1,0 +1,24 @@
+:host {
+    color: white;
+}
+
+button {
+    background: none;
+    color: white;
+    border: 5px solid #121212;
+}
+
+button:focus {
+    outline: none;
+}
+
+fa-icon {
+    font-size: 2rem;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+fa-icon:hover {
+    color: black;
+}

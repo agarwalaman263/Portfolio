@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    height: 10px;
+    width: 100%;
+    border: 2px solid #080808;
+}
+
+.filled-area {
+    background: #080808;
+    height: 100%;
+}

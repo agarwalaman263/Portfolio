@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @HostListener('scroll', ['$event']) 
+        scrollHandler(event) {
+          console.debug(event);
+        }
   title = 'portfolio';
 }

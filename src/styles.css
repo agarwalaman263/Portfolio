@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+}
+
+.jumbotron {
+    background: none;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'circular';
+    src: url('./assets/fonts/CircularStd-Black.eot');
+    /* IE9 Compat Modes */
+    src: url('./assets/fonts/CircularStd-Black.woff') format('woff'), /* Super Modern Browsers */
+    url('./assets/fonts/CircularStd-Black.ttf') format('truetype')/* Safari, Android, iOS */
+}
+
+.underscore:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 50px;
+    background: white;
+    left: 3px;
+}
+
+.basicLayout {
+    display: flex;
+    font-family: circular;
+    color: white;
+    background-color: #BDBDBD;
+    width: 100vw;
+    flex-direction: column;
+}

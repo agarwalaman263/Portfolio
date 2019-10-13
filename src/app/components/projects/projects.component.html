@@ -1,0 +1,15 @@
+<ng-container>
+    <div class="jumbotron">
+        <app-headers [text]="'Projects'"></app-headers>
+        <ng-container *ngFor="let work  of this.projects">
+            <div class="lead d-flex justify-content-between">
+                <div>{{work['Name']}}</div>
+                <div>{{work['Link']}}</div>
+            </div>
+            <div>
+                {{work['Description']}}
+            </div>
+            <hr class="my-4" style="border: white solid 1px;">
+        </ng-container>
+    </div>
+</ng-container>

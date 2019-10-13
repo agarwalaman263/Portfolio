@@ -1,0 +1,16 @@
+<ng-container>
+    <div class="jumbotron">
+        <app-headers [text]="'Skillset'"></app-headers>
+        <ng-container>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 mb-6 d-flex flex-column justify-content-start " *ngFor="let domain of this.skills">
+                    <div class="lead mt-4 mt-2">{{domain['Domain']}}</div>
+                    <div *ngFor="let skill of domain['set']">
+                        <div class='mb-2 mt-3'>{{skill['skill']}}</div>
+                        <app-progress-bar [value]="skill['level']"></app-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</ng-container>

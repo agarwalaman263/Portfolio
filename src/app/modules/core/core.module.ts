@@ -5,13 +5,15 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { UnderscoreDirective } from './directives/underscore.directive';
 import { SectionLayoutDirective } from './directives/section-layout.directive';
 import { CenterAlignDirective } from './directives/center-align.directive';
+import { ParallaxDirective } from './directives/parallax.directive';
+import { IndexSetterDirective } from './directives/index-setter.directive';
 
 @NgModule({
-  declarations: [HeadersComponent, ProgressBarComponent, UnderscoreDirective, SectionLayoutDirective, CenterAlignDirective],
+  declarations: [HeadersComponent, ProgressBarComponent, UnderscoreDirective, SectionLayoutDirective, CenterAlignDirective, ParallaxDirective, IndexSetterDirective],
   imports: [
     CommonModule
   ],
-  exports: [HeadersComponent,ProgressBarComponent,UnderscoreDirective,SectionLayoutDirective,CenterAlignDirective]
+  exports: [HeadersComponent,ProgressBarComponent,UnderscoreDirective,SectionLayoutDirective,CenterAlignDirective,ParallaxDirective,IndexSetterDirective]
 })
 export class CoreModule {
 

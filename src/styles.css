@@ -45,3 +45,10 @@ body {
     width: 100vw;
     flex-direction: column;
 }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}

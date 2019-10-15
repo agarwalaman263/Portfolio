@@ -21,7 +21,8 @@
                         "aot": false,
                         "assets": [
                             "src/favicon.ico",
-                            "src/assets"
+                            "src/assets",
+                            "src/assets/google0ab909dba771c81b.html.txt"
                         ],
                         "styles": [
                             "./node_modules/bootstrap/dist/css/bootstrap.css",

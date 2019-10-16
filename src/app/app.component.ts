@@ -6,9 +6,5 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @HostListener('scroll', ['$event']) 
-        scrollHandler(event) {
-          console.debug(event);
-        }
   title = 'portfolio';
 }

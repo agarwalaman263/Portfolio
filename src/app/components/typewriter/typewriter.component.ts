@@ -10,7 +10,7 @@ export class TypewriterComponent implements OnInit {
   constructor() { }
   private listOfAdjective = ['Meme Buff.', 'Python Charmer.', 'Data Enthusiast.', 'Algorithm Lover.', 'Software Engineer.', 'Web Developer.'];
   public finalString = '';
-  @HostListener('scroll', ['$event']) 
+  @HostListener('scroll', ['$event'])
         scrollHandler(event) {
           console.debug(event);
         }
@@ -21,13 +21,12 @@ export class TypewriterComponent implements OnInit {
     setInterval(() => {
       i = i % this.listOfAdjective.length;
       this.finalString = this.listOfAdjective[i].slice(0, j);
-      // console.log(this.finalString);
-      if (j != this.listOfAdjective[i].length && increasingState == true) {
+      if (j !== this.listOfAdjective[i].length && increasingState === true) {
         j++;
-      } else if (j == 0 && increasingState == false) {
+      } else if (j === 0 && increasingState === false) {
         increasingState = true;
         i = i + 1;
-      } else if (j != this.listOfAdjective[i].length && increasingState == false) {
+      } else if (j !== this.listOfAdjective[i].length && increasingState === false) {
         j--;
       } else {
         increasingState = false;

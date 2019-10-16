@@ -10,7 +10,7 @@ export class ParallaxDirective {
   }
   public menuPosition: any;
   ngAfterViewInit() {
-    this.menuPosition = this.eleRef.nativeElement.offsetTop
+    this.menuPosition = this.eleRef.nativeElement.offsetTop;
   }
   @HostListener('window:scroll', ['$event'])
   handleScroll() {

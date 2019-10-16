@@ -1,34 +1,26 @@
 <ng-container>
     <div class="jumbotron">
         <app-headers [text]="'Education'"></app-headers>
-        <div class="lead d-flex justify-content-between">
-            <div>High School</div>
-            <div>2010-2012</div>
-        </div>
-        <div>
-            Delhi Public School, Indore (C.B.S.E)
-        </div>
-        <p>CGPA: 8.4</p>
-        <hr class="my-4" style="border: white solid 1px;">
-        <div class="lead d-flex justify-content-between">
-            <div>Senior Secondary School</div>
-            <div>2012-2014</div>
-        </div>
-        <div>
-            Delhi Public School, Indore (C.B.S.E)
-        </div>
-        <p>Percentage: 84.4</p>
-        <hr class="my-4" style="border: white solid 1px;">
-        <div class="lead d-flex justify-content-between">
-            <div>Bachelor of Technology</div>
-            <div>2015-2019</div>
-        </div>
-        <div>
-            Branch: Computer Sciences
-        </div>
-        <div>
-            Vellore Institute of Technology, Vellore
-        </div>
-        <p>Percentage: 84.4</p>
-    </div>
-</ng-container>
+        <ng-container *ngFor='let education of this.education'>
+            <div class="lead d-flex justify-content-between">
+                <div>{{education.catergory}}</div>
+                <div>{{education.duration}}</div>
+            </div>
+            <ng-container *ngFor="let additional of education.additional">
+                <div>
+                    {{additional}}
+                </div>
+            </ng-container>
+            <div>
+                {{education.institution}}
+            </div>
+            <p>
+                <span *ngIf="!!education.CGPA">
+                    CGPA:&nbsp;{{education.CGPA}}
+                </span>
+                <span *ngIf="!!education.percentage">
+                    Percentage:&nbsp;{{education.percentage|percent}}
+                </span>
+            </p>
+            <hr class="my-4" style="border: white solid 1px;">
+        </ng-container>

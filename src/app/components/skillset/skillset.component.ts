@@ -11,19 +11,19 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Competitive Coding',
       set: [
         {
-          skill: "C++",
+          skill: 'C++',
           level: 60
         },
         {
-          skill: "C",
+          skill: 'C',
           level: 50
         }, {
-          skill: "Python",
+          skill: 'Python',
           level: 70
         },
         {
-          skill: "Java",
-          level:60
+          skill: 'Java',
+          level: 60
         }
       ]
     },
@@ -31,14 +31,14 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Front-End Web Development',
       set: [
         {
-          skill: "HTML",
+          skill: 'HTML',
           level: 80
         },
         {
-          skill: "CSS",
+          skill: 'CSS',
           level: 85
         }, {
-          skill: "JS",
+          skill: 'JS',
           level: 80
         },
         {
@@ -51,14 +51,14 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Web Framework',
       set: [
         {
-          skill: "Vanilla",
+          skill: 'Vanilla',
           level: 50
         },
         {
-          skill: "Angular",
+          skill: 'Angular',
           level: 85
         }, {
-          skill: "React",
+          skill: 'React',
           level: 55
         }
       ]
@@ -66,14 +66,14 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Backend Frameworks',
       set: [
         {
-          skill: "Flask",
+          skill: 'Flask',
           level: 75
         },
         {
-          skill: "Express",
+          skill: 'Express',
           level: 65
         }, {
-          skill: "Spring",
+          skill: 'Spring',
           level: 60
         }
       ]
@@ -82,11 +82,11 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Databases',
       set: [
         {
-          skill: "Postgres",
+          skill: 'Postgres',
           level: 80
         },
         {
-          skill: "MongoDB",
+          skill: 'MongoDB',
           level: 70
         }
       ]
@@ -95,7 +95,7 @@ export class SkillsetComponent implements OnInit {
       Domain: 'Version Control',
       set: [
         {
-          skill: "Git",
+          skill: 'Git',
           level: 90
         }
       ]

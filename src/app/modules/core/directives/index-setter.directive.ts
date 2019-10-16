@@ -1,13 +1,13 @@
-import { Directive, Input, ElementRef } from '@angular/core';
+import { Directive, Input, ElementRef, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appIndexSetter]'
 })
-export class IndexSetterDirective {
+export class IndexSetterDirective implements OnInit {
 @Input('index') index;
-  constructor(private el:ElementRef) { }
+  constructor(private el: ElementRef) { }
   ngOnInit(): void {
-    this.el.nativeElement.style.zIndex=this.index;
+    this.el.nativeElement.style.zIndex = this.index;
   }
 
 }

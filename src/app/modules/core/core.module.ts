@@ -13,7 +13,7 @@ import { IndexSetterDirective } from './directives/index-setter.directive';
   imports: [
     CommonModule
   ],
-  exports: [HeadersComponent,ProgressBarComponent,UnderscoreDirective,SectionLayoutDirective,CenterAlignDirective,ParallaxDirective,IndexSetterDirective]
+  exports: [HeadersComponent, ProgressBarComponent, UnderscoreDirective, SectionLayoutDirective, CenterAlignDirective, ParallaxDirective, IndexSetterDirective]
 })
 export class CoreModule {
 

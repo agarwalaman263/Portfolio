@@ -14,7 +14,11 @@ export class ExperienceComponent implements OnInit {
       designation: 'Full Stack Developer',
       duration: 'July 2019 - Today',
       work:
-        `During my service, I was asked to work on Angular 7 and Spring Boot Application. Along with Front End and API development, I also worked on deployment using docker and architectural tools like RabbitMQ. I gained knowledge on how to cover all the edge cases in a micro service architeture when scaling the application to a larger audience.`
+        `During my service, I was asked to work on Angular 7 and Spring Boot Application.
+        Along with Front End and API development,
+        I also worked on deployment using docker and architectural tools like RabbitMQ.
+        I gained knowledge on how to cover all the edge cases in a
+        micro service architeture when scaling the application to a larger audience.`
 
     },
     {

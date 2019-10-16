@@ -1,13 +1,13 @@
-import { Directive, ElementRef, OnInit, Renderer,  } from '@angular/core';
+import { Directive, ElementRef, OnInit, Renderer2,  } from '@angular/core';
 
 @Directive({
-  selector: '[underscore]'
+  selector: '[appUnderscore]'
 })
-export class UnderscoreDirective implements OnInit{
+export class UnderscoreDirective implements OnInit {
 
-  constructor(public el:ElementRef, private renderer: Renderer) { }
-  ngOnInit(){
-    this.renderer.setElementClass(this.el.nativeElement,'underscore',true);
+  constructor(public el: ElementRef, private renderer: Renderer2) { }
+  ngOnInit() {
+    this.renderer.addClass(this.el.nativeElement, 'underscore');
   }
 
 }

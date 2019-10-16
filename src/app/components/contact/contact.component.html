@@ -1,20 +1,27 @@
 <ng-container>
     <div class="jumbotron d-flex flex-column" appCenterAlign>
-
         <button class="p-4"> Download my resume</button>
         <div class="mt-4 d-flex justify-content-around " style="width: 50%;">
-            <fa-icon [icon]="faCoffee"></fa-icon>
-            <fa-icon [icon]="faTwitter"></fa-icon>
-            <fa-icon [icon]="faInsta"></fa-icon>
-            <fa-icon [icon]="faGithub"></fa-icon>
-            <fa-icon [icon]="faLinkedin"></fa-icon>
+            <a target='_blank' href="https://twitter.com/cyclopaman">
+                <fa-icon [icon]="faTwitter"></fa-icon>
+            </a>
+            <a target='_blank' href="https://www.instagram.com/doofenshmirtz.evil.inc_/">
+                <fa-icon [icon]="faInsta"></fa-icon>
+            </a>
+            <a href="https://github.com/agarwalaman263">
+                <fa-icon [icon]="faGithub"></fa-icon>
+            </a>
+            <a target='_blank' href="https://www.linkedin.com/in/amanagarwal123/">
+                <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
         </div>
         <div class="mail mt-2">
-            Feel free to drop a mail at <a href="mailto:agarwalaman263@gmail.com">agarwalaman263@gmail.com</a>
+            Feel free to drop a mail at <a target='_blank' href="mailto:agarwalaman263@gmail.com">agarwalaman263@gmail.com</a>
         </div>
-        <div class="mt-5">
+
+        <div class="mt-5 text-center">
             Made with
-            <fa-icon [icon]="faHeart" style="color: red;font-size: unset;"></fa-icon> with angular and github. Huge shoutout to FontAwesome for amazing icons;
+            <fa-icon [icon]="faHeart" style="color: red;font-size: unset;"></fa-icon>using Angular and Github.<br> Huge shoutout to FontAwesome for amazing icons.
         </div>
     </div>
 </ng-container>

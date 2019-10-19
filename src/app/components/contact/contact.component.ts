@@ -3,7 +3,7 @@ import {library } from '@fortawesome/fontawesome-svg-core';
 import { fas, faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab, faFontAwesome, faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { DownloadPDFService } from 'src/app/services/download-pdf.service';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -11,7 +11,7 @@ import { DownloadPDFService } from 'src/app/services/download-pdf.service';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private download: DownloadPDFService) {
+  constructor() {
   }
 // public downloadResume=()=>{
 //   this.download.downloadPdf('./../../../assets/finalresume.pdf').subscribe(res => {

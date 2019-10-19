@@ -18,8 +18,7 @@ export class ExperienceComponent implements OnInit {
         Along with Front End and API development,
         I also worked on deployment using docker and architectural tools like RabbitMQ.
         I gained knowledge on how to cover all the edge cases in a
-        micro service architeture when scaling the application to a larger audience.`
-
+        micro service architecure when scaling the application to a larger audience.`
     },
     {
       company: 'Philips India',
@@ -37,52 +36,41 @@ export class ExperienceComponent implements OnInit {
       work:
         `As an Intern, I was expected to make a application for the HR Team which could gamify the career of employees. This provides the employee to track the minimum requirements for getiing the desired rank in the office heirarchy. The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
         `
-
     },
      {
        company: 'IEEE SPS VIT',
       designation: 'Board Member',
       duration: 'April 2018 - April 2019',
       work:
-        `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-      alias dignissimos. Modi nobis possimus reiciendis eligendi vero
-      ratione laborum nam laudantium. Vitae beatae perferendis ipsa
-      ducimus consectetur fugiat debitis veniam! Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Minus, voluptas. Adipisci
-      voluptatibus illo aperiam voluptas obcaecati at soluta, ut facere
-      mollitia velit eveniet nostrum, perferendis quod vero asperiores
-      doloribus deserunt.`
-
+        `IEEE Signal Processing Society is one of the most successful chapters in VIT. 
+        As a Board member, I led a team of Web developers and Designer to collaborate and develop various web based projects. 
+        The team conducted various workshops and hand on dev events to facilitate the students. 
+        I also got opportunity to be the speaker for a number of workshops on Web Development and Adobe Photoshop.
+        `
     },
      {
 company: 'Gravitas 2016',
       designation: 'Core Designer',
-      duration: 'May 2016 - Aug 2016',
+      duration: 'May 2016 - Aug 2016', 
       work:
-        `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-      alias dignissimos. Modi nobis possimus reiciendis eligendi vero
-      ratione laborum nam laudantium. Vitae beatae perferendis ipsa
-      ducimus consectetur fugiat debitis veniam! Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Minus, voluptas. Adipisci
-      voluptatibus illo aperiam voluptas obcaecati at soluta, ut facere
-      mollitia velit eveniet nostrum, perferendis quod vero asperiores
-      doloribus deserunt.`
-
+        `Gravitas is one of the largest College Tech fest in India. 
+        I was a part of the organizing committee for the year 2016. 
+        I was a part of the Design Group which emphasized on Social Media publicity and Design Campaigns. 
+        Being a part of Design group, 
+        I was given the task to Online posters using softwares like Adobe Photoshop, 
+        Adobe Illustrator etc which should stick to the theme of the event. 
+        The posters mainly focuses on advertising the events and workshops happening in the Tech Fest.
+        `
     },
 {
   company: 'Apple Developers Group VIT',
       designation: 'Core Designer',
       duration: 'Oct 2015 - April 2017',
       work:
-        `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-      alias dignissimos. Modi nobis possimus reiciendis eligendi vero
-      ratione laborum nam laudantium. Vitae beatae perferendis ipsa
-      ducimus consectetur fugiat debitis veniam! Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Minus, voluptas. Adipisci
-      voluptatibus illo aperiam voluptas obcaecati at soluta, ut facere
-      mollitia velit eveniet nostrum, perferendis quod vero asperiores
-      doloribus deserunt.`
-
+        `Apple Developers Group is one of the most well known clubs functioning in VIT. 
+        The club is officially affiliated to Apple Inc. under its Student Program. 
+        I joined the club as a designer and worked on poster design along with UI/UX interfacing. 
+        During that time, I gain knowledge on how to work Adobe Photoshop, Adobe Illustrator etc.`
     }
 ];
   ngOnInit() {

@@ -1,6 +1,6 @@
 <ng-container>
     <div class="jumbotron d-flex flex-column" appCenterAlign>
-        <button class="p-4"> Download my resume</button>
+        <a href="./../../../assets/finalresume.pdf"> <button class="p-4" (click)='this.downloadResume()'> Download my resume</button></a>
         <div class="mt-4 d-flex justify-content-around " style="width: 50%;">
             <a target='_blank' href="https://twitter.com/cyclopaman">
                 <fa-icon [icon]="faTwitter"></fa-icon>

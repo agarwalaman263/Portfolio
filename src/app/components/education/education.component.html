@@ -4,25 +4,20 @@
         <div class="grid-container">
             <div *ngFor='let education of this.education; let i=index' class="each-card" style="display: flex;justify-content: center;align-items: center;">
                 <img [src]="education.image" class="image" alt="check you net">
-                <div class="open-button" (click)="this.alter(i)" style="color: black">
-                    <fa-icon [icon]="faBars"></fa-icon>
-                </div>
-                <div class="info-circle" [ngClass]="{'expand': !this.expandedState[i]}">
-                    <div style="position: relative;">
-                        <div class="open-button" (click)="this.alter(i)" style="color: black">
-                            <fa-icon [icon]="faTimes"></fa-icon>
-                        </div>
-
-                    </div>
+                <div class="info-circle">
                     <div style='margin-top:70px;'>
                         {{education.catergory}}
                     </div>
                     <div>
                         {{education.institution}}
                     </div>
+                    <div *ngFor="let each of education?.additional">
+                        {{each}}
+                    </div>
                     <div>
                         {{education.duration}}
                     </div>
+
                 </div>
             </div>
 

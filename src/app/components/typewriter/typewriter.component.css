@@ -27,7 +27,7 @@
 
 .star {
     position: absolute;
-    animation: disapeer 1s linear infinite;
+    animation: disapeer 1s linear;
 }
 
 @keyframes blinker {

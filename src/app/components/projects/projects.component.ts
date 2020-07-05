@@ -17,7 +17,8 @@ export class ProjectsComponent implements OnInit {
         The backend is designed using Express js while the front end was created in Vanilla JS and MySQL was used as database. 
         CheerioJS was used as the web scraper and ElectronJS was used to make the application cross-platform compatible.`
       ],
-      Link: 'Private'
+      Link: 'Private',
+      image: './../../../assets/operating_system_4lr6.svg'
     },
     {
       Name: 'Career Matrix',
@@ -30,7 +31,8 @@ export class ProjectsComponent implements OnInit {
         The backend was designed using Flask while the front end was developed using Vanilla JS. 
         Postgres and Amazon S3 was used as the databases while Heroku was used as databases.`
       ],
-      Link: 'Private'
+      Link: 'Private',
+      image: './../../../assets/success_factors_fay0.svg'
     },
     {
       Name: 'VIT Feedback Portal',
@@ -39,8 +41,9 @@ export class ProjectsComponent implements OnInit {
         The core concept was to maintain the anonymity of student and make sure that the feedback reaches the teacher. 
         The technology used was pHp and VanillaJs along with Jquery. 
         The website uses both Server side rendering as when as AJAX calling.`
-        ],
-      Link: 'Private'
+      ],
+      Link: 'Private',
+      image: './../../../assets/accept_tasks_po1c.svg'
     },
     {
       Name: 'Stock Prediction',
@@ -48,7 +51,8 @@ export class ProjectsComponent implements OnInit {
         `Stock prediction is a ML based project which helps the user to predict the future prices of a stock. the dataset for the ML modelling was sourced from Kaggle while the language preferred for development is python. The dataset was first cleaned and then mapped to various parameter which are supposed to affect the previous prices like GDP of country, Oil prices, inflation etc. 
         The project runs for 500 companies. For each company, the stock prices are stores for last 5 years. 3 algorithm are computed and bagged together for higher accuracy. The accuracy of this project has reached 92%.`
       ],
-      Link: 'Private'
+      Link: 'Private',
+      image: './../../../assets/bear_market_ania.svg'
     }
   ];
   ngOnInit() {

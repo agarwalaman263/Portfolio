@@ -1,4 +1,82 @@
 :host {
-    color: #121212;
     text-align: justify;
 }
+
+.jumbotron {
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    row-gap: 100px;
+    column-gap: 100px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.each-card {
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 500px;
+    overflow-y: hidden;
+    transition: all 2s;
+}
+
+.each-card:hover>.info-circle {
+    top: 10%;
+}
+
+.info-circle {
+    position: absolute;
+    bottom: -100%;
+    top: 100%;
+    left: 0;
+    background-color: #ff8300;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 1rem;
+    transition: all 2s;
+    text-align: left;
+}
+
+.image {
+    z-index: 2;
+    width: 100%;
+}
+
+.link {
+    transition: all 2s;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 10%;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.each-card:hover>.link {
+    left: 0;
+}
+
+
+/* .each-card:hover>.info-circle {
+    clip-path: circle(100% at 95% 5%);
+} */

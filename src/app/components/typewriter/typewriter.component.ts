@@ -9,8 +9,9 @@ export class TypewriterComponent implements OnInit {
 
   constructor() { }
   public countOfAllStars = 500;
-  public listOfAllStars: any[] = [];
+  public listOfAllStars: any[]=[];
   private listOfAdjective = [
+    'Meme Buff.',
     'Python Charmer.',
     'Data Enthusiast.',
     'Algorithm Lover.',
@@ -36,7 +37,6 @@ export class TypewriterComponent implements OnInit {
         j--;
       }
     }, 100);
-
     for (let j = 0; j < this.countOfAllStars; j++) {
       const star: modal = new modal();
       star.size = Math.random() * 2;

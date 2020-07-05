@@ -1,15 +1,33 @@
 <ng-container>
     <div class="jumbotron">
         <app-headers [text]="'Projects'"></app-headers>
-        <ng-container *ngFor="let work  of this.projects">
-            <div class="lead d-flex justify-content-between">
-                <div>{{work['Name']}}</div>
-                <div>{{work['Link']}}</div>
+        <div class="grid-container">
+            <div *ngFor='let project of this.projects; let i=index' class="each-card" style="display: flex;justify-content: center;align-items: center;">
+                <img [src]="project.image" class="image" alt="check you net">
+                <div class="link">
+                    <div>
+
+                        {{project.Link}}
+                    </div>
+                </div>
+                <div class="info-circle">
+                    <div>
+                        {{project.Name}}
+                    </div>
+                    <div>
+                        {{project.Description}}
+                    </div>
+
+                    <!-- <div *ngFor="let each of education?.additional">
+                        {{each}}
+                    </div> -->
+                    <!-- <div>
+                        {{education.duration}}
+                    </div> -->
+
+                </div>
             </div>
-            <div>
-                {{work['Description']}}
-            </div>
-            <hr class="my-4" style="border: white solid 1px;">
-        </ng-container>
+
+        </div>
     </div>
 </ng-container>

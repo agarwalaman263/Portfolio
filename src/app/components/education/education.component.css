@@ -1,3 +1,78 @@
-/* :host {
+:host {
+    text-align: justify;
+}
+
+.jumbotron {
     color: white;
-} */
+    background-color: black;
+    margin-bottom: 0;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    row-gap: 100px;
+    column-gap: 100px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.each-card {
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 500px;
+}
+
+.number-overlay {
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    font-size: 11rem;
+    opacity: 0.05;
+    overflow: hidden;
+    width: auto;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.info-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #9bdc28;
+    clip-path: circle(100% at 95% 5%);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 1rem;
+    transition: all 2s;
+}
+
+.open-button {
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.image {
+    z-index: 2;
+    width: 100%;
+}
+
+.expand {
+    clip-path: circle(0% at 95% 5%);
+}

@@ -14,17 +14,17 @@ body {
     perspective: 2px;
 }
 
-#style-8::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
     border: 1px solid black;
     background-color: #F5F5F5;
 }
 
-#style-8::-webkit-scrollbar {
+html::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
 }
 
-#style-8::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
     background-color: #000000;
 }
 

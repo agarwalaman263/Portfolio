@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {library } from '@fortawesome/fontawesome-svg-core';
-import { fas, faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import { fab, faFontAwesome, faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -13,20 +11,20 @@ export class ContactComponent implements OnInit {
 
   constructor() {
   }
-// public downloadResume=()=>{
-//   this.download.downloadPdf('./../../../assets/finalresume.pdf').subscribe(res => {
-//     const fileURL = URL.createObjectURL(res);
-//     window.open(fileURL, '_blank');
-//   });
+  // public downloadResume=()=>{
+  //   this.download.downloadPdf('./../../../assets/finalresume.pdf').subscribe(res => {
+  //     const fileURL = URL.createObjectURL(res);
+  //     window.open(fileURL, '_blank');
+  //   });
 
-// }
+  // }
   faCoffee = faCoffee;
   faTwitter = faTwitter;
   faInsta = faInstagram;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faHeart = faHeart;
-    ngOnInit() {
+  ngOnInit() {
 
   }
 

@@ -1,8 +1,21 @@
 :host {
-    /* height: 100%; */
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+}
+
+.host::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+.host::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+:host::-webkit-scrollbar-thumb {
+    background-color: #000000;
 }
 
 .parallax {

@@ -1,16 +1,28 @@
 <ng-container>
     <div class="jumbotron">
         <app-headers [text]="'Experience'"></app-headers>
-        <ng-container *ngFor="let work  of this.experience">
-            <div class="lead d-flex justify-content-between">
-                <div>{{work['company']}}</div>
-                <div>{{work['designation']}}</div>
+        <div class="grid-container">
+            <div *ngFor='let experience of this.experience; let i=index' class="each-card-container gradientBorder{{i%4}}">
+                <div class="each-card">
+                    <div class="number-overlay">
+                        <!-- {{i%10===i && i!==0?'0'+i:i}} -->
+                        {{experience.company}}
+                    </div>
+                    <div class="designation">
+                        {{experience.designation}}
+                    </div>
+                    <div class="company">
+                        {{experience.duration}}
+                    </div>
+                    <button class="read-work-button" (click)="this.expandContactWork(i)">
+                        {{!this.stateOfExpands[i]?'Read More':'Read Less'}}</button>
+                    <div class="work" style="overflow-y: auto;" [ngClass]="{expand: this.stateOfExpands[i]}">
+                        <div style="overflow-y: auto;">
+                            {{experience.work}}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>{{work['duration']}}</div>
-            <div>
-                {{work['work']}}
-            </div>
-            <hr class="my-4" style="border: white solid 1px;">
-        </ng-container>
+        </div>
     </div>
 </ng-container>

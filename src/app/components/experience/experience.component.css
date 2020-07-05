@@ -1,4 +1,149 @@
 :host {
-    color: #121212;
     text-align: justify;
+}
+
+.jumbotron {
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    row-gap: 100px;
+    column-gap: 100px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+
+/* .gradient {
+    padding: 10px;
+    background: hsla(144, 53%, 10%, 1);
+    background: linear-gradient(135deg, #FF0057, #5d02f5);
+    height: 500px;
+    transform: skew(2deg, 2deg);
+} */
+
+.each-card-container,
+.gradientBorder1,
+.gradientBorder2,
+.gradientBorder3,
+.gradientBorder4 {
+    position: relative;
+    z-index: 0;
+}
+
+.each-card {
+    background: rgb(32, 32, 45);
+    background: linear-gradient(90deg, rgba(32, 32, 45, 1) 50%, rgba(23, 23, 25, 1) 50%);
+    position: relative;
+    padding: 1rem;
+    overflow: hidden;
+    /* z-index: 10; */
+    box-sizing: border-box;
+    height: 500px;
+    /* margin: 2px; */
+}
+
+.each-card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 2s;
+}
+
+.each-card-container:hover:before {
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    transform: skew(1deg, 1deg);
+}
+
+.gradientBorder0:hover:before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.gradientBorder1:hover:before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.gradientBorder2:hover:before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.gradientBorder3:hover:before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.number-overlay {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    color: whitesmoke;
+    font-size: 14rem;
+    opacity: 0.02;
+    transition: all 2s;
+    animation-duration: 2s;
+    overflow: hidden;
+    width: auto;
+    z-index: 2;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.designation {
+    margin-top: 140px;
+    font-size: 1rem;
+    color: white;
+    user-select: none;
+}
+
+.work {
+    display: none;
+    color: white;
+    font-weight: 200;
+    z-index: 100 !important;
+    user-select: none;
+    text-align: left;
+}
+
+.company {
+    color: white;
+    z-index: 100 !important;
+    user-select: none;
+}
+
+.each-card-container:hover>.each-card>.number-overlay {
+    top: 10px;
+    font-size: 3rem;
+    opacity: 0.2;
+}
+
+.read-work-button {
+    z-index: 100 !important;
+    margin-top: 20px;
+    background: none;
+    border: 2px white solid;
+    color: white;
+    padding: 5px;
+    outline: none !important;
+    user-select: none;
+}
+
+.expand {
+    display: block;
 }

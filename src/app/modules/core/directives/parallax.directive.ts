@@ -10,16 +10,16 @@ export class ParallaxDirective {
   }
   public menuPosition: any;
   ngAfterViewInit() {
-    this.menuPosition = this.eleRef.nativeElement.offsetTop;
+    // this.menuPosition = this.eleRef.nativeElement.offsetTop;
   }
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
-    const windowScroll = window.pageYOffset;
-    if (windowScroll >= this.menuPosition) {
-      this.renderer.addClass(this.eleRef.nativeElement, 'sticky');
-    } else {
-      this.renderer.removeClass(this.eleRef.nativeElement, 'sticky');
-    }
+    // const windowScroll = window.pageYOffset;
+    // if (windowScroll >= this.menuPosition) {
+    //   this.renderer.addClass(this.eleRef.nativeElement, 'sticky');
+    // } else {
+    //   this.renderer.removeClass(this.eleRef.nativeElement, 'sticky');
+    // }
   }
 
 }

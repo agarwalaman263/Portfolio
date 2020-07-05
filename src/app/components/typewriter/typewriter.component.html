@@ -1,9 +1,20 @@
 <ng-container>
-    <div class="jumbotron d-flex flex-column" appCenterAlign>
+    <div class="star" *ngFor="let star of this.listOfAllStars" [ngStyle]="{
+        'width': star.size+'px',
+        'top': star.yCoordinate + 'px',
+        'left':star.xCoordinate + 'px',
+        'height':star.size + 'px',
+        'background-color': 'white',
+        'border-radius': '50%'
+
+    }">
+
+    </div>
+    <div class=" jumbotron d-flex flex-column " appCenterAlign>
         <div>
-            <div class="display-3">Hi There </div>
-            <div class="display-3">My name is <span style="position: relative;" appUnderscore> Aman Agarwal</span></div>
-            <span class="lead blink">and I am a &nbsp;{{this.finalString}}</span>
+            <div class="display-3 color-white ">Hi There </div>
+            <div class="display-3 color-white ">My name is <span style="position: relative; " appUnderscore> Aman Agarwal</span></div>
+            <span class="lead blink color-white ">and I am a &nbsp;{{this.finalString}}</span>
         </div>
     </div>
 </ng-container>

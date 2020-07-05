@@ -8,12 +8,15 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class TypewriterComponent implements OnInit {
 
   constructor() { }
-  private listOfAdjective = ['Meme Buff.', 'Python Charmer.', 'Data Enthusiast.', 'Algorithm Lover.', 'Software Engineer.', 'Web Developer.'];
+  public countOfAllStars = 500;
+  public listOfAllStars: any[] = [];
+  private listOfAdjective = [
+    'Python Charmer.',
+    'Data Enthusiast.',
+    'Algorithm Lover.',
+    'Software Engineer.',
+    'Web Developer.'];
   public finalString = '';
-  @HostListener('scroll', ['$event'])
-        scrollHandler(event) {
-          console.debug(event);
-        }
   ngOnInit() {
     let i = 0;
     let j = 0;
@@ -33,7 +36,25 @@ export class TypewriterComponent implements OnInit {
         j--;
       }
     }, 100);
+
+    for (let j = 0; j < this.countOfAllStars; j++) {
+      const star: modal = new modal();
+      star.size = Math.random() * 2;
+      star.xCoordinate = Math.random() * window.innerWidth;
+      star.yCoordinate = Math.random() * window.innerHeight;
+      this.listOfAllStars.push(star);
+    }
+
+
+
   }
+}
 
+export class modal {
+  public xCoordinate: number;
+  public yCoordinate: number;
+  public size: number;
+  constructor() {
 
+  }
 }

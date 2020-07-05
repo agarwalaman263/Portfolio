@@ -14,17 +14,23 @@ body {
     perspective: 2px;
 }
 
-.jumbotron {
-    background: none;
-    min-height: 100vh;
+#style-8::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: #F5F5F5;
 }
 
-@font-face {
-    font-family: 'circular';
-    src: url('./assets/fonts/CircularStd-Black.eot');
-    /* IE9 Compat Modes */
-    src: url('./assets/fonts/CircularStd-Black.woff') format('woff'), /* Super Modern Browsers */
-    url('./assets/fonts/CircularStd-Black.ttf') format('truetype')/* Safari, Android, iOS */
+#style-8::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-8::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+.jumbotron {
+    background-color: unset;
+    min-height: 100vh;
 }
 
 .underscore:after {
@@ -39,16 +45,17 @@ body {
 
 .basicLayout {
     display: flex;
-    font-family: circular;
+    font-family: 'Poppins', sans-serif;
     color: white;
     background-color: #BDBDBD;
     width: 100vw;
     flex-direction: column;
 }
 
-.sticky {
+
+/* .sticky {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
-}
+} */

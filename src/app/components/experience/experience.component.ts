@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
-  public experience = [
+  constructor() {
+  }
+  public stateOfExpands: boolean[] = [];
+  public experience: any[] = [
     {
-      company: 'Philips',
+      company: 'Studio Watr',
+      designation: 'Freelancer',
+      duration: 'May 2019 - July 2019',
+      work:
+        `As a freelancer, I was asked to create the company website using core CSS and angular.
+         The Website uses CSS styling and optimization at its peak level.
+         The website was curated by awwwwwards.com and as a average rating of 8.`
+    },
+    {
+      company: 'Philips India',
       designation: 'Full Stack Developer',
       duration: 'July 2019 - Today',
       work:
@@ -18,7 +29,7 @@ export class ExperienceComponent implements OnInit {
         Along with Front End and API development,
         I also worked on deployment using docker and architectural tools like RabbitMQ.
         I gained knowledge on how to cover all the edge cases in a
-        micro service architecure when scaling the application to a larger audience.`
+        micro service architecture when scaling the application to a larger audience.`
     },
     {
       company: 'Philips India',
@@ -37,43 +48,54 @@ export class ExperienceComponent implements OnInit {
         `As an Intern, I was expected to make a application for the HR Team which could gamify the career of employees. This provides the employee to track the minimum requirements for getiing the desired rank in the office heirarchy. The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
         `
     },
-     {
-       company: 'IEEE SPS VIT',
+    {
+      company: 'IEEE SPS VIT',
       designation: 'Board Member',
       duration: 'April 2018 - April 2019',
       work:
-        `IEEE Signal Processing Society is one of the most successful chapters in VIT. 
-        As a Board member, I led a team of Web developers and Designer to collaborate and develop various web based projects. 
-        The team conducted various workshops and hand on dev events to facilitate the students. 
+        `IEEE Signal Processing Society is one of the most successful chapters in VIT.
+        As a Board member, I led a team of Web developers and Designer to collaborate and develop various web based projects.
+        The team conducted various workshops and hand on dev events to facilitate the students.
         I also got opportunity to be the speaker for a number of workshops on Web Development and Adobe Photoshop.
         `
     },
-     {
-company: 'Gravitas 2016',
+    {
+      company: 'Gravitas 2016',
       designation: 'Core Designer',
-      duration: 'May 2016 - Aug 2016', 
+      duration: 'May 2016 - Aug 2016',
       work:
-        `Gravitas is one of the largest College Tech fest in India. 
-        I was a part of the organizing committee for the year 2016. 
-        I was a part of the Design Group which emphasized on Social Media publicity and Design Campaigns. 
-        Being a part of Design group, 
-        I was given the task to Online posters using softwares like Adobe Photoshop, 
-        Adobe Illustrator etc which should stick to the theme of the event. 
+        `Gravitas is one of the largest College Tech fest in India.
+        I was a part of the organizing committee for the year 2016.
+        I was a part of the Design Group which emphasized on Social Media publicity and Design Campaigns.
+        Being a part of Design group,
+        I was given the task to Online posters using softwares like Adobe Photoshop,
+        Adobe Illustrator etc which should stick to the theme of the event.
         The posters mainly focuses on advertising the events and workshops happening in the Tech Fest.
         `
     },
-{
-  company: 'Apple Developers Group VIT',
+    {
+      company: 'ADG VIT',
       designation: 'Core Designer',
       duration: 'Oct 2015 - April 2017',
       work:
-        `Apple Developers Group is one of the most well known clubs functioning in VIT. 
-        The club is officially affiliated to Apple Inc. under its Student Program. 
-        I joined the club as a designer and worked on poster design along with UI/UX interfacing. 
+        `Apple Developers Group is one of the most well known clubs functioning in VIT.
+        The club is officially affiliated to Apple Inc. under its Student Program.
+        I joined the club as a designer and worked on poster design along with UI/UX interfacing.
         During that time, I gain knowledge on how to work Adobe Photoshop, Adobe Illustrator etc.`
     }
-];
+  ];
   ngOnInit() {
+    for (let i = 0; i < this.experience.length; i++) {
+      this.stateOfExpands.push(false);
+    }
+  }
+
+  public expandContactWork(elementNumber: number) {
+    const mem = this.stateOfExpands[elementNumber]
+    for (let i = 0; i < this.experience.length; i++) {
+      this.stateOfExpands[i] = false;
+    }
+    this.stateOfExpands[elementNumber] = !mem;
   }
 
 }

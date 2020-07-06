@@ -11,7 +11,6 @@ export class TypewriterComponent implements OnInit {
   public countOfAllStars = 500;
   public listOfAllStars: any[]=[];
   private listOfAdjective = [
-    'Meme Buff.',
     'Python Charmer.',
     'Data Enthusiast.',
     'Algorithm Lover.',

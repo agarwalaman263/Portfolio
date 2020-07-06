@@ -1,24 +1,136 @@
 :host {
+    text-align: justify;
+}
+
+.jumbotron {
     color: white;
+    background-color: black;
+    margin-bottom: 0;
 }
 
-button {
-    background: none;
-    color: white;
-    border: 5px solid #121212;
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button:focus {
-    outline: none;
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, 350px); */
+    /* row-gap: 100px; */
+    /* column-gap: 100px; */
+    width: 350px;
+    /* grid-template-rows: auto;
+    justify-content: center;
+    justify-self: center;
+    align-self: center; */
 }
 
-fa-icon {
-    font-size: 2rem;
-    color: white;
-    transition-duration: 1s;
-    cursor: pointer;
-}
-
-fa-icon:hover {
+.each-card {
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 1rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 500px;
+    overflow-y: hidden;
+    transition: all 2s;
+    /* grid-column-start: 2; */
+    /* grid-column-end: 3; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: black;
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    border: white 2px solid;
+    margin-top: 50px;
+}
+
+.info-circle {
+    position: absolute;
+    bottom: -100%;
+    top: 100%;
+    left: 0;
+    background-color: #ffffffcc;
+    /* filter: blur(20px); */
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 1rem;
+    transition: all 2s;
+    text-align: left;
+}
+
+.image {
+    z-index: 2;
+    width: 100%;
+}
+
+.link {
+    transition: all 2s;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 10%;
+    width: 100%;
+    background-color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.each-card:hover>.link {
+    left: 0;
+}
+
+.button-resume>button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    background: hsla(339, 100%, 55%, 1);
+    background: linear-gradient(0deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1);
+    font-weight: normal;
+    color: white;
+}
+
+.icon-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* .each-card:hover>.info-circle {
+    clip-path: circle(100% at 95% 5%);
+} */
+
+.icon-container a fa-icon {
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(0deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+}
+
+.icon-container>*>fa-icon::hover>svg {
+    size: 5rem;
 }

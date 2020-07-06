@@ -12,18 +12,18 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'C++',
-          level: 60
+          level: 0.60
         },
         {
           skill: 'C',
-          level: 50
+          level: 0.50
         }, {
           skill: 'Python',
-          level: 70
+          level: 0.70
         },
         {
           skill: 'Java',
-          level: 60
+          level: 0.60
         }
       ]
     },
@@ -32,18 +32,18 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'HTML',
-          level: 80
+          level: 0.80
         },
         {
           skill: 'CSS',
-          level: 85
+          level: 0.85
         }, {
           skill: 'JS',
-          level: 80
+          level: 0.80
         },
         {
           skill: 'SASS',
-          level: 70
+          level: 0.70
         }
       ]
     },
@@ -52,14 +52,14 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'Vanilla',
-          level: 50
+          level: 0.50
         },
         {
           skill: 'Angular',
-          level: 85
+          level: 0.85
         }, {
           skill: 'React',
-          level: 55
+          level: 0.55
         }
       ]
     }, {
@@ -67,14 +67,14 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'Flask',
-          level: 75
+          level: 0.75
         },
         {
           skill: 'Express',
-          level: 65
+          level: 0.65
         }, {
           skill: 'Spring',
-          level: 60
+          level: 0.60
         }
       ]
     },
@@ -83,11 +83,11 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'Postgres',
-          level: 80
+          level: 0.80
         },
         {
           skill: 'MongoDB',
-          level: 70
+          level: 0.70
         }
       ]
     },
@@ -96,7 +96,7 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'Git',
-          level: 90
+          level: 0.90
         }
       ]
     },

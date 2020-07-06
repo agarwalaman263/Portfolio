@@ -124,6 +124,8 @@
     font-size: 1rem;
     color: white;
     user-select: none;
+    font-weight: bold;
+    ;
 }
 
 .work {

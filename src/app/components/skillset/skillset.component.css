@@ -1,3 +1,5 @@
-:host {
-    color: #080808;
+.jumbotron {
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
 }

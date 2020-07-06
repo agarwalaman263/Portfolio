@@ -1,11 +1,27 @@
 :host {
     display: block;
-    height: 10px;
+    height: 15px;
     width: 100%;
-    border: 2px solid #080808;
+    /* border: 0.5px solid white; */
 }
 
+:host:after {}
+
 .filled-area {
-    background: #080808;
+    position: relative;
+    background: #8a2387;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8a2387, #e94057, #f27121);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
+}
+
+.value {
+    position: absolute;
+    top: -2.5px;
+    left: 5px;
+    color: white;
+    font-size: 0.8rem;
 }

@@ -2,13 +2,12 @@
     <div class="jumbotron">
         <app-headers [text]="'Education'"></app-headers>
         <div class="grid-container">
-            <div *ngFor='let education of this.education; let i=index' class="each-card" style="display: flex;justify-content: center;align-items: center;">
+            <div *ngFor='let education of this.education; let i=index' class="each-card">
                 <img [src]="education.image" class="image" alt="check you net">
+                <div>{{education.catergory }}
+                </div>
                 <div class="info-circle">
-                    <div style='margin-top:70px;'>
-                        {{education.catergory}}
-                    </div>
-                    <div>
+                    <div class="first-element">
                         {{education.institution}}
                     </div>
                     <div *ngFor="let each of education?.additional">

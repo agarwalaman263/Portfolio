@@ -13,17 +13,13 @@ export class SkillsetComponent implements OnInit {
         {
           skill: 'C++',
           level: 0.60
-        },
-        {
-          skill: 'C',
-          level: 0.50
         }, {
           skill: 'Python',
-          level: 0.70
+          level: 0.85
         },
         {
           skill: 'Java',
-          level: 0.60
+          level: 0.75
         }
       ]
     },
@@ -40,10 +36,6 @@ export class SkillsetComponent implements OnInit {
         }, {
           skill: 'JS',
           level: 0.80
-        },
-        {
-          skill: 'SASS',
-          level: 0.70
         }
       ]
     },
@@ -52,14 +44,11 @@ export class SkillsetComponent implements OnInit {
       set: [
         {
           skill: 'Vanilla',
-          level: 0.50
+          level: 0.90
         },
         {
           skill: 'Angular',
           level: 0.85
-        }, {
-          skill: 'React',
-          level: 0.55
         }
       ]
     }, {
@@ -70,11 +59,8 @@ export class SkillsetComponent implements OnInit {
           level: 0.75
         },
         {
-          skill: 'Express',
-          level: 0.65
-        }, {
           skill: 'Spring',
-          level: 0.60
+          level: 0.75
         }
       ]
     },

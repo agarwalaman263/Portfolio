@@ -11,7 +11,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsetComponent } from './components/skillset/skillset.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     ProjectsComponent,
     SkillsetComponent,
-    AboutMeComponent,
     ContactComponent
   ],
   imports: [

@@ -37,7 +37,10 @@ export class ExperienceComponent implements OnInit {
       duration: 'Jan 2019 - July 2019',
 
       work:
-        `As an Intern, I was introduced to Java and Angular. I was subjected to various proof of concepts (POCs) to get an indepth view of Spring Boot and front end development. Along side Java and Angular, I also gained command over bash terminal, Git and Artifactory.`
+        `As an Intern, 
+        I was introduced to Java and Angular. 
+        I was subjected to various proof of concepts (POCs) to get an indepth view of Spring Boot and front end development. 
+        Along side Java and Angular, I also gained command over bash terminal, Git and Artifactory.`
 
     },
     {
@@ -45,7 +48,9 @@ export class ExperienceComponent implements OnInit {
       designation: 'Intern',
       duration: 'May 2018 - July 2019',
       work:
-        `As an Intern, I was expected to make a application for the HR Team which could gamify the career of employees. This provides the employee to track the minimum requirements for getiing the desired rank in the office heirarchy. The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
+        `I worked on an application for the HR Team which would provide the employees, a way to track all the minimum requirements for getting to the desired rank in the office hierarchy. 
+        The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. 
+        The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
         `
     },
     {
@@ -64,30 +69,16 @@ export class ExperienceComponent implements OnInit {
       designation: 'Core Designer',
       duration: 'May 2016 - Aug 2016',
       work:
-        `Gravitas is one of the largest College Tech fest in India.
-        I was a part of the organizing committee for the year 2016.
-        I was a part of the Design Group which emphasized on Social Media publicity and Design Campaigns.
-        Being a part of Design group,
-        I was given the task to Online posters using softwares like Adobe Photoshop,
+        `Gravitas is one of the largest Tech fest in India.
+        I was a part of the core design team, which worked on Social Media publicity and 
+        I was given the task to design online posters using softwares like Adobe Photoshop,
         Adobe Illustrator etc which should stick to the theme of the event.
         The posters mainly focuses on advertising the events and workshops happening in the Tech Fest.
         `
-    },
-    {
-      company: 'ADG VIT',
-      designation: 'Core Designer',
-      duration: 'Oct 2015 - April 2017',
-      work:
-        `Apple Developers Group is one of the most well known clubs functioning in VIT.
-        The club is officially affiliated to Apple Inc. under its Student Program.
-        I joined the club as a designer and worked on poster design along with UI/UX interfacing.
-        During that time, I gain knowledge on how to work Adobe Photoshop, Adobe Illustrator etc.`
     }
   ];
   ngOnInit() {
-    for (let i = 0; i < this.experience.length; i++) {
-      this.stateOfExpands.push(false);
-    }
+    this.stateOfExpands = new Array(this.experience.length).fill(false);
   }
 
   public expandContactWork(elementNumber: number) {

@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class TypewriterComponent implements OnInit {
 
   constructor() { }
-  public countOfAllStars = 500;
+  public countOfAllStars = 200;
   public listOfAllStars: any[]=[];
   private listOfAdjective = [
     'Python Charmer.',

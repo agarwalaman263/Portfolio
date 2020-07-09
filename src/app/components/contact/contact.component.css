@@ -8,27 +8,12 @@
     margin-bottom: 0;
 }
 
-.container1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grid-container {
+.flex-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin: 0 auto;
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fill, 350px); */
-    /* row-gap: 100px; */
-    /* column-gap: 100px; */
     width: 350px;
-    /* grid-template-rows: auto;
-    justify-content: center;
-    justify-self: center;
-    align-self: center; */
 }
 
 .each-card {
@@ -41,8 +26,6 @@
     height: 500px;
     overflow-y: hidden;
     transition: all 2s;
-    /* grid-column-start: 2; */
-    /* grid-column-end: 3; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -54,21 +37,6 @@
     border-radius: 50%;
     border: white 2px solid;
     margin-top: 50px;
-}
-
-.info-circle {
-    position: absolute;
-    bottom: -100%;
-    top: 100%;
-    left: 0;
-    background-color: #ffffffcc;
-    /* filter: blur(20px); */
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    padding: 1rem;
-    transition: all 2s;
-    text-align: left;
 }
 
 .image {
@@ -88,10 +56,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 20px 20px 0 0;
-}
-
-.each-card:hover>.link {
-    left: 0;
 }
 
 .button-resume>button {
@@ -118,19 +82,10 @@
     align-items: center;
 }
 
-
-/* .each-card:hover>.info-circle {
-    clip-path: circle(100% at 95% 5%);
-} */
-
 .icon-container a fa-icon {
     color: white;
     padding: 1rem;
     border-radius: 50%;
     background: hsla(221, 45%, 73%, 1);
     background: linear-gradient(0deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
-}
-
-.icon-container>*>fa-icon::hover>svg {
-    size: 5rem;
 }

@@ -35,7 +35,6 @@ html::-webkit-scrollbar-thumb {
 
 .jumbotron {
     background-color: unset;
-    min-height: 100vh;
     border-radius: 0px;
 }
 

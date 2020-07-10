@@ -3,20 +3,9 @@
     background: linear-gradient(#111425, #3751e0);
 }
 
-:host:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    bottom: 0;
-    z-index: 10;
-    background-image: url('../../../assets/forest.png');
-    background-repeat: no-repeat;
-    background-size: 100vw 100%;
-}
-
 .jumbotron {
     min-height: 100vh !important;
+    margin-bottom: 0 !important;
 }
 
 .blink:after {
@@ -43,5 +32,11 @@
 @keyframes disapeer {
     50% {
         opacity: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 0rem 0rem;
     }
 }

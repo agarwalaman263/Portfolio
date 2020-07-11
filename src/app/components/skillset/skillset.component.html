@@ -2,13 +2,19 @@
     <div class="jumbotron">
         <app-headers [text]="'Skillset'"></app-headers>
         <ng-container>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-4 col-sm-4 mb-6 d-flex flex-column justify-content-start " *ngFor="let domain of this.skills">
                     <div class="lead mt-4 mt-2">{{domain['Domain']}}</div>
                     <div *ngFor="let skill of domain['set']">
                         <div class='mb-2 mt-3'>{{skill['skill']}}</div>
                         <app-progress-bar [value]="skill['level']"></app-progress-bar>
                     </div>
+                </div>
+            </div> -->
+            <div style="display: flex;flex-wrap: wrap;" appCenterAlign>
+                <div *ngFor="let item of this.strips" appCenterAlign style="padding:2rem;margin:0.5rem 0.5rem 0.5rem 0; display: flex;flex-direction: column;">
+                    <div class="eachLogo" [inlineSVG]="'./../../../assets/'+item.path " alt="" srcset=""></div>
+                    <div class="strip">{{item.skill}}</div>
                 </div>
             </div>
         </ng-container>

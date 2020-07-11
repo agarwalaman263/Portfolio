@@ -7,6 +7,7 @@ import { TypewriterComponent } from './components/typewriter/typewriter.componen
 import { EducationComponent } from './components/education/education.component';
 import { CoreModule } from './modules/core/core.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     CoreModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    InlineSVGModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -84,7 +84,7 @@
 
 .icon-container a fa-icon {
     color: white;
-    padding: 1rem;
+    padding: 1rem 1.2rem;
     border-radius: 50%;
     background: hsla(221, 45%, 73%, 1);
     background: linear-gradient(0deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);

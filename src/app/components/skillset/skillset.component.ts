@@ -67,7 +67,7 @@ export class SkillsetComponent implements OnInit {
       path: 'typescript.svg'
     },
     {
-      skill: 'PostgresSQL',
+      skill: 'PostgreSQL',
       path: 'postgresql.svg'
     },
     {

@@ -14,7 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsetComponent } from './components/skillset/skillset.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgCardioModule } from 'ng-cardio';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     CoreModule,
     FontAwesomeModule,
     HttpClientModule,
-    InlineSVGModule
+    InlineSVGModule,
+    NgCardioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

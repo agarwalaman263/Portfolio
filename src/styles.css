@@ -19,6 +19,15 @@ body {
     outline: none !important;
 }
 
+.jumbotron {
+    /* background-color: unset; */
+    border-radius: 0px;
+    color: white;
+    background-color: unset;
+    background: unset;
+    margin-bottom: 0;
+}
+
 html::-webkit-scrollbar-track {
     border: 1px solid black;
     background-color: #F5F5F5;
@@ -31,11 +40,6 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
     background-color: #000000;
-}
-
-.jumbotron {
-    background-color: unset;
-    border-radius: 0px;
 }
 
 .underscore:after {

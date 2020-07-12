@@ -12,19 +12,19 @@ export class ExperienceComponent implements OnInit {
   public stateOfExpands: boolean[] = [];
   public experience: any[] = [
     {
-      company: 'Studio Watr',
-      designation: 'Freelancer',
-      duration: 'May 2019 - July 2019',
-      work:
+      overlayText: 'Studio Watr',
+      cardHeader: 'Freelancer',
+      belowHeader: 'May 2019 - July 2019',
+      cardDetails:
         `As a freelancer, I was asked to create the company website using core CSS and angular.
          The Website uses CSS styling and optimization at its peak level.
          The website was curated by awwwwwards.com and as a average rating of 8.`
     },
     {
-      company: 'Philips India',
-      designation: 'Full Stack Developer',
-      duration: 'July 2019 - Today',
-      work:
+      overlayText: 'Philips India',
+      cardHeader: 'Full Stack Developer',
+      belowHeader: 'July 2019 - Today',
+      cardDetails:
         `During my service, I was asked to work on Angular 7 and Spring Boot Application.
         Along with Front End and API development,
         I also worked on deployment using docker and architectural tools like RabbitMQ.
@@ -32,11 +32,11 @@ export class ExperienceComponent implements OnInit {
         micro service architecture when scaling the application to a larger audience.`
     },
     {
-      company: 'Philips India',
-      designation: 'Intern',
-      duration: 'Jan 2019 - July 2019',
+      overlayText: 'Philips India',
+      cardHeader: 'Intern',
+      belowHeader: 'Jan 2019 - July 2019',
 
-      work:
+      cardDetails:
         `As an Intern, 
         I was introduced to Java and Angular. 
         I was subjected to various proof of concepts (POCs) to get an indepth view of Spring Boot and front end development. 
@@ -44,20 +44,20 @@ export class ExperienceComponent implements OnInit {
 
     },
     {
-      company: 'Kuehne Nagel',
-      designation: 'Intern',
-      duration: 'May 2018 - July 2019',
-      work:
+      overlayText: 'Kuehne Nagel',
+      cardHeader: 'Intern',
+      belowHeader: 'May 2018 - July 2019',
+      cardDetails:
         `I worked on an application for the HR Team which would provide the employees, a way to track all the minimum requirements for getting to the desired rank in the office hierarchy. 
         The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. 
         The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
         `
     },
     {
-      company: 'IEEE SPS VIT',
-      designation: 'Board Member',
-      duration: 'April 2018 - April 2019',
-      work:
+      overlayText: 'IEEE SPS VIT',
+      cardHeader: 'Board Member',
+      belowHeader: 'April 2018 - April 2019',
+      cardDetails:
         `IEEE Signal Processing Society is one of the most successful chapters in VIT.
         As a Board member, I led a team of Web developers and Designer to collaborate and develop various web based projects.
         The team conducted various workshops and hand on dev events to facilitate the students.
@@ -65,10 +65,10 @@ export class ExperienceComponent implements OnInit {
         `
     },
     {
-      company: 'Gravitas 2016',
-      designation: 'Core Designer',
-      duration: 'May 2016 - Aug 2016',
-      work:
+      overlayText: 'Gravitas 2016',
+      cardHeader: 'Core Designer',
+      belowHeader: 'May 2016 - Aug 2016',
+      cardDetails:
         `Gravitas is one of the largest Tech fest in India.
         I was a part of the core design team, which worked on Social Media publicity and 
         I was given the task to design online posters using softwares like Adobe Photoshop,

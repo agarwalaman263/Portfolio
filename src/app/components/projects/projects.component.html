@@ -1,25 +1,6 @@
 <ng-container>
     <div class="jumbotron">
         <app-headers [text]="'Projects'"></app-headers>
-        <div class="grid-container">
-            <div *ngFor='let project of this.projects; let i=index' class="each-card" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
-                <img [src]="project.image" class="image" alt="check you net">
-                <div style="text-align: center;color: black;">
-                    {{project.Name}}
-                </div>
-                <div class="link">
-                    <div>
-                        {{project.Name}}
-
-                    </div>
-                </div>
-                <div class="info-circle">
-
-                    <div style='color:black;' [innerHTML]="project.Description">
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <card-full-overlay [CardDetailsArray]="this.projects"></card-full-overlay>
     </div>
 </ng-container>

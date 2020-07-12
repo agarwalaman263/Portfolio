@@ -2,12 +2,6 @@
     text-align: justify;
 }
 
-.jumbotron {
-    color: white;
-    background-color: black;
-    margin-bottom: 0;
-}
-
 .flex-container {
     display: flex;
     justify-content: center;

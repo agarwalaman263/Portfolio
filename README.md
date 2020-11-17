@@ -1,15 +1,27 @@
-# NG-Cardio (pronounced as ng-card-IO)
+# Portfolio
 
-Ng-cardio is an angular library used for generating card views for angular applications. The cards ae completely responsive and helps the developers to lower his burden of maintaining card views plus removes the hassle for creating the CSS for cards. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
 
-The library styling is based on CSS entirely and doesnot rqeuire to overload the JS engine to module styling.
+## Development server
 
-###### Currently the library consists 3 types of cards with limited deep controls. The library is completely open sourced and contributers are most welcome to raise the PR.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-The live demonstration of the library is presented on my portfolio. Kindly view it :- 
+## Code scaffolding
 
-```
-[Link to my portfolio](https://amanagarwal.in)
-```
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

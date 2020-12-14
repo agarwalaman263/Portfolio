@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-typewriter',
@@ -7,9 +8,10 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class TypewriterComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) platformId: string) { }
   public countOfAllStars = 200;
   public listOfAllStars: any[] = [];
+  private  testBrowser: boolean;
   private listOfAdjective = [
     'Python Charmer.',
     'Data Enthusiast.',
@@ -18,9 +20,11 @@ export class TypewriterComponent implements OnInit {
     'Web Developer.'];
   public finalString = '';
   ngOnInit() {
+    this.testBrowser = isPlatformBrowser(PLATFORM_ID)
     let i = 0;
     let j = 0;
     let increasingState = true;
+    if (this.testBrowser) {
     setInterval(() => {
       i = i % this.listOfAdjective.length;
       this.finalString = this.listOfAdjective[i].slice(0, j);
@@ -43,7 +47,7 @@ export class TypewriterComponent implements OnInit {
       star.yCoordinate = Math.random() * window.innerHeight;
       this.listOfAllStars.push(star);
     }
-
+  }
 
 
   }

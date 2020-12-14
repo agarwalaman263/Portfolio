@@ -13,6 +13,7 @@ body {
     /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
     perspective: 2px;
     user-select: none;
+    position: relative;
 }
 
 * {
@@ -61,19 +62,12 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-
-/* .sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-} */
-
 .eachLogo svg {
     width: 6rem !important;
     height: 6rem;
-    /* padding: 2rem;
-    margin: 0.5rem 0.5rem 0.5rem 0; */
-    /* display: flex; */
-    /* flex-direction: column; */
+}
+
+.coming-soon svg{
+    height: 100%;
+    height: 100%;
 }

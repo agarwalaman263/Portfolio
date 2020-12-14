@@ -7,15 +7,36 @@ import { SectionLayoutDirective } from './directives/section-layout.directive';
 import { CenterAlignDirective } from './directives/center-align.directive';
 import { ParallaxDirective } from './directives/parallax.directive';
 import { IndexSetterDirective } from './directives/index-setter.directive';
-
+import { ComingSsonPageComponent } from './components/coming-sson-page/coming-sson-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { InlineSVGModule } from 'ng-inline-svg';
 @NgModule({
-  declarations: [HeadersComponent, ProgressBarComponent, UnderscoreDirective, SectionLayoutDirective, CenterAlignDirective, ParallaxDirective, IndexSetterDirective],
+  declarations: [
+    NavbarComponent,
+    HeadersComponent,
+    ProgressBarComponent,
+    UnderscoreDirective,
+    SectionLayoutDirective,
+    CenterAlignDirective,
+    ParallaxDirective,
+    IndexSetterDirective,
+    ComingSsonPageComponent,
+    NavbarComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    InlineSVGModule
   ],
-  exports: [HeadersComponent, ProgressBarComponent, UnderscoreDirective, SectionLayoutDirective, CenterAlignDirective, ParallaxDirective, IndexSetterDirective]
+  exports: [
+    NavbarComponent,
+    ComingSsonPageComponent,
+    HeadersComponent, 
+    ProgressBarComponent, 
+    UnderscoreDirective, 
+    SectionLayoutDirective, 
+    CenterAlignDirective, 
+    ParallaxDirective, 
+    IndexSetterDirective]
 })
-export class CoreModule {
-
-
-}
+export class CoreModule { }

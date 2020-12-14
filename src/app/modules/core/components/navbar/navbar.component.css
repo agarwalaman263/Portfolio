@@ -1,0 +1,11 @@
+:host{
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 100000;
+}
+
+a:hover, a:visited, a:active{
+    color: white !important;
+    position: relative;
+}

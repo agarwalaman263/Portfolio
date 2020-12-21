@@ -1,14 +1,14 @@
-import { Directive, ElementRef, Renderer } from '@angular/core';
+import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appCenterAlign]'
 })
 export class CenterAlignDirective {
 
-  constructor(private el: ElementRef, private renderer: Renderer) { }
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
   ngOnInit(): void {
-    this.renderer.setElementClass(this.el.nativeElement, 'justify-content-center', true);
-    this.renderer.setElementClass(this.el.nativeElement, 'align-items-center', true);
+    this.renderer.addClass(this.el.nativeElement, 'justify-content-center');
+    this.renderer.addClass(this.el.nativeElement, 'align-items-center');
   }
 
 }

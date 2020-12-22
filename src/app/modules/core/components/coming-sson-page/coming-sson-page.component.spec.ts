@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ComingSsonPageComponent } from './coming-sson-page.component';
 
@@ -6,7 +6,7 @@ describe('ComingSsonPageComponent', () => {
   let component: ComingSsonPageComponent;
   let fixture: ComponentFixture<ComingSsonPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ComingSsonPageComponent ]
     })

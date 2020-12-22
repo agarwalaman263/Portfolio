@@ -11,8 +11,7 @@
     "dev:ssr": "ng run portfolio:serve-ssr",
     "serve:ssr": "node dist/portfolio/server/main.js",
     "build:ssr": "ng build --prod && ng run portfolio:server:production",
-    "prerender": "ng run portfolio:prerender",
-    "heroku": "npm run prerender && node dist/Portfolio/server/main.js"
+    "prerender": "ng run portfolio:prerender"
   },
   "private": true,
   "dependencies": {

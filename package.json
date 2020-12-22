@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node dist/Portfolio/server/main.js",
+    "build": "ng build && npm run prerender",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

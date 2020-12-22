@@ -13,7 +13,7 @@
     "build:ssr": "ng build --prod && ng run portfolio:server:production",
     "prerender": "ng run portfolio:prerender",
     "postinstall": "npm run prerender",
-    "start:heroku": "node dist/server/main"
+    "start:heroku": "node dist/portfolio/server/main"
   },
   "private": true,
   "dependencies": {

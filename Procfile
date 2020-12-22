@@ -1,1 +1,1 @@
-web: npm run prerender && node dist/Portfolio/server/main.js
+web: npm run heroku

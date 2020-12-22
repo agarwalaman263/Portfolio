@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'app-typewriter',
@@ -6,9 +7,14 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./typewriter.component.css']
 })
 export class TypewriterComponent implements OnInit {
-
-  constructor() { }
-  public countOfAllStars = 200;
+  
+  private isBrowser = true;
+  
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
+   }
+  
+   public countOfAllStars = 200;
   public listOfAllStars: any[] = [];
   private listOfAdjective = [
     'Python Charmer.',
@@ -18,34 +24,33 @@ export class TypewriterComponent implements OnInit {
     'Web Developer.'];
   public finalString = '';
   ngOnInit() {
-    let i = 0;
-    let j = 0;
-    let increasingState = true;
-    setInterval(() => {
-      i = i % this.listOfAdjective.length;
-      this.finalString = this.listOfAdjective[i].slice(0, j);
-      if (j !== this.listOfAdjective[i].length && increasingState === true) {
-        j++;
-      } else if (j === 0 && increasingState === false) {
-        increasingState = true;
-        i = i + 1;
-      } else if (j !== this.listOfAdjective[i].length && increasingState === false) {
-        j--;
-      } else {
-        increasingState = false;
-        j--;
+    if (this.isBrowser) {
+      let i = 0;
+      let j = 0;
+      let increasingState = true;
+      setInterval(() => {
+        i = i % this.listOfAdjective.length;
+        this.finalString = this.listOfAdjective[i].slice(0, j);
+        if (j !== this.listOfAdjective[i].length && increasingState === true) {
+          j++;
+        } else if (j === 0 && increasingState === false) {
+          increasingState = true;
+          i = i + 1;
+        } else if (j !== this.listOfAdjective[i].length && increasingState === false) {
+          j--;
+        } else {
+          increasingState = false;
+          j--;
+        }
+      }, 400);
+      for (let j = 0; j < this.countOfAllStars; j++) {
+        const star: modal = new modal();
+        star.size = Math.random() * 2;
+        star.xCoordinate = Math.random() * window.innerWidth;
+        star.yCoordinate = Math.random() * window.innerHeight;
+        this.listOfAllStars.push(star);
       }
-    }, 400);
-    for (let j = 0; j < this.countOfAllStars; j++) {
-      const star: modal = new modal();
-      star.size = Math.random() * 2;
-      star.xCoordinate = Math.random() * window.innerWidth;
-      star.yCoordinate = Math.random() * window.innerHeight;
-      this.listOfAllStars.push(star);
     }
-
-
-
   }
 }
 

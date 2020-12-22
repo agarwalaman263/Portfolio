@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node ./dist/Portfolio/server/main.js",
-    "build": "ng build && npm run prerender",
+    "start": "node dist/Portfolio/server/main",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run portfolio:serve-ssr",
     "serve:ssr": "node dist/portfolio/server/main.js",
     "build:ssr": "ng build --prod && ng run portfolio:server:production",
-    "prerender": "ng run portfolio:prerender"
+    "prerender": "ng run portfolio:prerender",
+    "postinstall": "npm run prerender"
   },
   "private": true,
   "dependencies": {

@@ -25,7 +25,6 @@
               "src/assets/google0ab909dba771c81b.html.txt"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -43,13 +42,13 @@
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -158,10 +157,9 @@
           "options": {
             "browserTarget": "portfolio:build:production",
             "serverTarget": "portfolio:server:production",
-            "routes": [
-              "/", "/blog"
-            ]
+            "routesFile": "./Routes.txt"
           },
+          "guessRoutes": false,
           "configurations": {
             "production": {}
           }

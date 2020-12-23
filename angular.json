@@ -5,7 +5,11 @@
   "projects": {
     "portfolio": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,12 +24,13 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
+              "/src/robots.txt",
               "src/favicon.ico",
               "src/assets",
               "src/assets/google0ab909dba771c81b.html.txt"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },

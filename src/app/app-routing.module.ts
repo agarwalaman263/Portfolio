@@ -5,7 +5,7 @@ import { ComingSsonPageComponent } from './modules/core/components/coming-sson-p
 const routes: Routes = [{
   path: 'blog',
   component: ComingSsonPageComponent
-},{
+}, {
   path: '',
   loadChildren: () => import('./modules/portfolio/portfolio.module').then(m => m.PortfolioModule)
 }];

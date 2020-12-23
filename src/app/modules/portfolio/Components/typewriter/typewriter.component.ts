@@ -7,13 +7,13 @@ import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
   styleUrls: ['./typewriter.component.css']
 })
 export class TypewriterComponent implements OnInit {
-  
+
   private isBrowser = true;
-  
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
     this.isBrowser = isPlatformBrowser(this.platformId);
    }
-  
+
    public countOfAllStars = 200;
   public listOfAllStars: any[] = [];
   private listOfAdjective = [
@@ -43,8 +43,8 @@ export class TypewriterComponent implements OnInit {
           j--;
         }
       }, 400);
-      for (let j = 0; j < this.countOfAllStars; j++) {
-        const star: modal = new modal();
+      for (let k = 0; k < this.countOfAllStars; k++) {
+        const star: Modal = new Modal();
         star.size = Math.random() * 2;
         star.xCoordinate = Math.random() * window.innerWidth;
         star.yCoordinate = Math.random() * window.innerHeight;
@@ -54,7 +54,7 @@ export class TypewriterComponent implements OnInit {
   }
 }
 
-export class modal {
+export class Modal {
   public xCoordinate: number;
   public yCoordinate: number;
   public size: number;

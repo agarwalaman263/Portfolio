@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-skillset',
   templateUrl: './skillset.component.html',
-  styleUrls: ['./skillset.component.css']
+  styleUrls: ['./skillset.component.scss']
 })
 export class SkillsetComponent implements OnInit {
   public strips = [

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
 
@@ -37,9 +37,9 @@ export class ExperienceComponent implements OnInit {
       belowHeader: 'Jan 2019 - July 2019',
 
       cardDetails:
-        `As an Intern, 
-        I was introduced to Java and Angular. 
-        I was subjected to various proof of concepts (POCs) to get an indepth view of Spring Boot and front end development. 
+        `As an Intern,
+        I was introduced to Java and Angular.
+        I was subjected to various proof of concepts (POCs) to get an indepth view of Spring Boot and front end development.
         Along side Java and Angular, I also gained command over bash terminal, Git and Artifactory.`
 
     },
@@ -48,8 +48,8 @@ export class ExperienceComponent implements OnInit {
       cardHeader: 'Intern',
       belowHeader: 'May 2018 - July 2019',
       cardDetails:
-        `I worked on an application for the HR Team which would provide the employees, a way to track all the minimum requirements for getting to the desired rank in the office hierarchy. 
-        The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS. 
+        `I worked on an application for the HR Team which would provide the employees, a way to track all the minimum requirements for getting to the desired rank in the office hierarchy.
+        The backend was developed in Python using a framework called Flask while the front end was developed using Vanilla JS.
         The deployment platform was Heroku while the database used was PostgreSQL and Amazon S3 buckets.
         `
     },
@@ -70,7 +70,7 @@ export class ExperienceComponent implements OnInit {
       belowHeader: 'May 2016 - Aug 2016',
       cardDetails:
         `Gravitas is one of the largest Tech fest in India.
-        I was a part of the core design team, which worked on Social Media publicity and 
+        I was a part of the core design team, which worked on Social Media publicity and
         I was given the task to design online posters using softwares like Adobe Photoshop,
         Adobe Illustrator etc which should stick to the theme of the event.
         The posters mainly focuses on advertising the events and workshops happening in the Tech Fest.
@@ -82,7 +82,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   public expandContactWork(elementNumber: number) {
-    const mem = this.stateOfExpands[elementNumber]
+    const mem = this.stateOfExpands[elementNumber];
     for (let i = 0; i < this.experience.length; i++) {
       this.stateOfExpands[i] = false;
     }

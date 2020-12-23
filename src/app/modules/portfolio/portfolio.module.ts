@@ -32,6 +32,6 @@ import { RouterModule } from '@angular/router';
     PortfolioRoutingModule,
     InlineSVGModule
 
-  ], exports:[PortfolioHomeComponent]
+  ], exports: [PortfolioHomeComponent]
 })
 export class PortfolioModule { }

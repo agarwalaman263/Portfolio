@@ -3,7 +3,7 @@ import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class EducationComponent implements OnInit {
     imageUrl: './../../../assets/professor_8lrt.svg',
   }, {
     belowImageText: 'High School',
-    overlayTextArray: ['Delhi Public School, Indore (C.B.S.E)','2010-2012'],
+    overlayTextArray: ['Delhi Public School, Indore (C.B.S.E)', '2010-2012'],
     imageUrl: './../../../assets/teaching_f1cm.svg',
   }];
   ngOnInit() {

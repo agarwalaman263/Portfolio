@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeadersComponent } from './components/headers/headers.component';
-import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { UnderscoreDirective } from './directives/underscore.directive';
 import { CenterAlignDirective } from './directives/center-align.directive';
 import { ComingSsonPageComponent } from './components/coming-sson-page/coming-sson-page.component';
@@ -12,7 +11,6 @@ import { InlineSVGModule } from 'ng-inline-svg';
   declarations: [
     NavbarComponent,
     HeadersComponent,
-    ProgressBarComponent,
     UnderscoreDirective,
     CenterAlignDirective,
     ComingSsonPageComponent,
@@ -25,9 +23,8 @@ import { InlineSVGModule } from 'ng-inline-svg';
   exports: [
     NavbarComponent,
     ComingSsonPageComponent,
-    HeadersComponent, 
-    ProgressBarComponent, 
-    UnderscoreDirective, 
+    HeadersComponent,
+    UnderscoreDirective,
     CenterAlignDirective]
 })
 export class CoreModule { }

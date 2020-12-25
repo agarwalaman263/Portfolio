@@ -1,0 +1,30 @@
+{
+  "hosting": {
+    "public": "dist/portfolio/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "assets/**",
+        "headers": [
+          {
+            "key": "cache-control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source":"**/*.@(css|js)",
+        "headers":[
+        {
+        "key":"cache-control",
+        "value":"public, max-age=31536000, immutable"
+        }
+        ]
+        }
+    ]
+  }
+}

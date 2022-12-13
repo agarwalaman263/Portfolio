@@ -33,7 +33,7 @@
     "@nguniversal/express-engine": "^8.2.6",
     "@nguniversal/module-map-ngfactory-loader": "v8.2.6",
     "bootstrap": "^4.5.3",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "ng-cardio": "^1.0.2",
     "ng-inline-svg": "^11.0.1",
     "rxjs": "~6.4.0",
